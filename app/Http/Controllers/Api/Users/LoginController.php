@@ -26,4 +26,9 @@ class LoginController extends Controller
             ->with('info', 'Invalid username or password')
             ->withInput();
     }
+
+    public function redirectTo()
+    {
+        return redirect('/dashboard');
+    }
 }
