@@ -26,7 +26,11 @@
                             <li><a href="#">Projects</a></li>
                             <li><a href="{{ url('/gallery') }}">Galleries</a></li>
                             <li><a href="{{ url('/contact') }}">Contact</a></li>
-                            <li><a href="{{ url('/login') }}">Login</a></li>
+                            @if(!auth()->user())
+                                <li><a href="{{ url('/login') }}">Login</a></li>
+                            @else
+                                <li><a href="{{ url('/logout') }}">Logout</a></li>
+                            @endif
                         </ul>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ Route::get('/contact', function () {
 
 Route::get('/login', function () {
     return view('login');
-});
+})->middleware('guest');
 
 Route::get('/logout', [
     'uses' => 'Auth\LoginController@logout'
