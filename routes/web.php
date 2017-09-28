@@ -23,18 +23,6 @@ Route::get('/login', function () {
     return view('login');
 })->middleware('guest');
 
-Route::get('/logout', [
-    'uses' => 'Auth\LoginController@logout'
-]);
-
-Route::post('login', [
-    'uses' => 'Auth\LoginController@login'
-]);
-
-Route::get('dashboard', function () {
-    return view('admin.index');
-});
-
 Route::get('gallery', function () {
     return view('gallery');
 });
@@ -51,3 +39,24 @@ Route::get('vision', function () {
 Route::get('team', function () {
     return view('team');
 });
+
+
+Route::get('/logout', [
+    'uses' => 'Auth\LoginController@logout'
+]);
+
+Route::post('login', [
+    'uses' => 'Auth\LoginController@login'
+]);
+
+Route::get('dashboard', [
+    'uses' => 'DashboardController@index'
+]);
+
+Route::post('/messages', [
+    'uses' => 'MessagesController@store'
+]);
+
+Route::post('/subscriptions', [
+    'uses' => 'SubscriptionsController@store'
+]);

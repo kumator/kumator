@@ -60,11 +60,15 @@
             </div>
             <div class="col-md-8">
                 <h2>Contact Form</h2>
-                <form action="contact.html#" class="contact-form row" id="contact-page-contact-form">
+                <form action="{{url('/messages')}}" class="contact-form row" method="post">
+                    {{ csrf_field() }}
+                    @if(session('message'))
+                        <div class="alert alert-info">{{ session('message')}}</div>
+                    @endif
                     <div class="col-md-6">
-                        <input type="text" name="name" placeholder="Name">
-                        <input type="text" name="email" placeholder="Email">
-                        <input type="text" name="phone" placeholder="Phone">
+                        <input type="text" name="fullname" placeholder="Full Name">
+                        <input type="text" name="email_address" placeholder="Email">
+                        <input type="text" name="phone_number" placeholder="Phone">
                     </div>
                     <div class="col-md-6">
                         <textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>

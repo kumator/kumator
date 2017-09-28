@@ -29,6 +29,7 @@
                             @if(!auth()->user())
                                 <li><a href="{{ url('/login') }}">Login</a></li>
                             @else
+                                <li><a href="{{ url('/dashboard') }}">Dashboard</a></li>
                                 <li><a href="{{ url('/logout') }}">Logout</a></li>
                             @endif
                         </ul>

@@ -71,9 +71,15 @@
                     <p>By subscribing to our mailing list you will always be updated. </p>
                 </div>
                 <div class="col-md-8 text-right sm-text-center">
-                            <input type="text" name="name" placeholder="Full Name">
-                            <input type="text" name="email" placeholder="Email Address">
-                    <a href="index.html#" class="thm-btn inverse mt-sm-15">Subscribe Now</a>
+                    <form action="{{url('/subscriptions')}}" method="post">
+                        {{ csrf_field() }}
+                        @if(session('message'))
+                            <div class="alert alert-info">{{ session('message') }}</div>
+                        @endif
+                        <input type="text" name="fullname" placeholder="Full Name" value="{{old('fullname')}}">
+                        <input type="text" name="email_address" placeholder="Email Address" value="{{old('email_address')}}">
+                        <button type="submit" class="thm-btn inverse mt-sm-15">Subscribe Now</button>
+                    </form>
                 </div>
 
             </div>

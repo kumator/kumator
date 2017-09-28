@@ -10,5 +10,11 @@ class Message extends Model
         'fullname',
         'email_address',
         'message',
+        'phone_number'
     ];
+
+    public function scopeNew($query)
+    {
+        return $query->where('read', 0);
+    }
 }

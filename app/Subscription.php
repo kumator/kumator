@@ -10,4 +10,9 @@ class Subscription extends Model
         'fullname',
         'email_address'
     ];
+
+    public function scopeNew($query)
+    {
+        return $query->where('read', 0);
+    }
 }

@@ -4,7 +4,7 @@
             <div class="col-sm-6 col-md-3">
                 <div class="footer-widget about-widget">
                     <a href="index.html">
-                        <img src="images/resources/footer-logo.png" alt="Awesome Image" />
+                        <img src="images/logo.jpg" alt="Awesome Image" />
                     </a>
                     <ul class="contact">
                         <li><i class="fa fa-map-marker"></i> <span>4th Avenue  Fedearl Housing, Gonin/Gora, Kaduna Nigeria. </span></li>
