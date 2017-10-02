@@ -4,10 +4,10 @@
             <div class="row">
                 <div class="col-md-6 promote-project text-left pb-sm-50 p-70 p-md-20 pl-120">
                     <h2 class="text-dark mb-30">KMHF</h2>
-                    <p class="pr-50 pr-50 mt-30" style="color:#453f3f; font-size:16px; line-height:19px;">Nigerian based foundation that provides humanitarian help, development and resources for widows, orphans, less privileged and suffering masses. The foundation aims to provide durable advantages through the implementation of developmental programmes and making substantial contributions to improving the daily lives of the people of Nigeria. </p>
+                    <p class="pr-50 pr-50 mt-30" style="color:#453f3f; font-size:16px; line-height:19px;">Nigerian based foundation that provides humanitarian help, development and resources for widows, orphans, less-privileged and suffering masses. The foundation aims to provide durable advantages through the implementation of developmental programmes and making substantial contributions to improving the daily lives of the people of Nigeria. </p>
                     <p class="pr-50 pr-50 mt-30" style="color:#453f3f; font-size:16px; line-height:19px;">The foundation seeks to mobilize resources to alleviate poverty in communities by providing basic amenities, education, skill acquisition programmes for me, women, young adults and children as well as providing free medical care for indigent people living with HIV/AIDS and other illnesses.</p>
-                    <a href="contact.html" class="thm-btn inverse mt-20">Contact Us</a>
-                    <a href="who-we-are.html" class="read-more thm-btn btn-dark mt-20"> Read More</a>
+                    <a href="{{ url('/contact') }}" class="thm-btn inverse mt-20">Contact Us</a>
+                    <a href="{{ url('/who-we-are') }}" class="read-more thm-btn btn-dark mt-20"> Read More</a>
                 </div>
                 <div class="col-md-6 bg-f7 p-80 p-md-20 p-sm-70 pb-50">
                     <h2 class="text-dark mt-0 pb-20 text-uppercase font-weight-700">Make a donation</h2>

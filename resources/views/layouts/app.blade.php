@@ -140,7 +140,7 @@
 
 
     <!-- switch color -->
-    <div class="config open">
+    {{--  <div class="config open">
         <div class="config-options">
             <h4>Colors</h4>
             <ul>
@@ -153,7 +153,7 @@
             </ul>
         </div>
         <a class="show-theme-options" href="index.html#"><i class="fa fa-cog"></i></a>
-    </div>
+    </div>  --}}
 
 
     <!--Scroll to top-->

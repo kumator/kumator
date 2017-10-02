@@ -18,7 +18,7 @@
                     <div class="content">
                         <!-- <h3>Lorem ipsum </h3> -->
                         <div class="text">
-                            <p>Our aim is to champion and amplify the voice of the widows, orphans, less privileged and suffering masses in a society where this class of people have been left hopeless, abandoned and neglected.</p>
+                            <p>Our aim is to champion and amplify the voice of the widows, orphans, less-privileged and suffering masses in a society where this class of people have been left hopeless, abandoned and neglected.</p>
                         </div>
                         <!-- <div class="link"><a href="events.html" class="read-more thm-btn normal-btn"><span class="fa fa-caret-right"></span> Join Now</a></div> -->
                     </div>
@@ -30,7 +30,7 @@
                     <div class="content">
                         <!-- <h3>Lorem ipsum </h3> -->
                         <div class="text">
-                            <p>We provide humanitarian help, development and resources for widows, orphans, less privileged and suffering masses. The foundation aims to provide durable advantages through the implementation of developmental programmes.</p>
+                            <p>We provide humanitarian help, development and resources for widows, orphans, less-privileged and suffering masses. The foundation aims to provide durable advantages through the implementation of developmental programmes.</p>
                         </div>
                         <!-- <div class="link"><a href="global-projects.html" class="read-more thm-btn normal-btn"><span class="fa fa-caret-right"></span> Join Now</a></div> -->
                     </div>

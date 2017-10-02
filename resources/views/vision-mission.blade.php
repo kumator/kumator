@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 sec-title colored text-center">
-                    <h2>Vission,Mission,Values</h2>
+                    <h2>Vision, Mission, Values</h2>
                     <span class="decor"><span class="inner"></span></span>
                 </div>
             </div>
@@ -35,8 +35,7 @@
                             <h3 class="pb-10"><span class="text-thm">Focus Areas</span></h3>
                             <b>
                               <ul>
-                                <li> Empowerment initiatives for orphans, widows, less privileged and suffering masses </li>
-                                <li>Empowerment initiatives for orphans, widows, less privileged and suffering masses  </li>
+                                <li> Empowerment initiatives for orphans, widows, less-privileged and suffering masses </li>
                                 <li>Educational initiatives</li>
                                 <li>Health initiatives</li>
                                 <li>Income generation for capital to start small scale business</li>
