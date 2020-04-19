@@ -1,0 +1,62 @@
+version: "3"
+
+services:
+  # The application
+  app:
+    container_name: app
+    build:
+      context: ./
+      dockerfile: app.dockerfile
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+    environment:
+      - "DB_PORT=3306"
+      - "DB_HOST=database"
+    networks:
+      - kumator-network
+
+  # The web server
+  web:
+    container_name: web
+    build:
+      context: ./
+      dockerfile: web.dockerfile
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+    ports:
+      - 80:80
+    networks:
+      - kumator-network
+
+  database:
+    container_name: db
+    image: mysql:5.7
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      - "MYSQL_DATABASE=${DB_DATABASE}"
+      - "MYSQL_USER=${DB_USERNAME}"
+      - "MYSQL_PASSWORD=${DB_PASSWORD}"
+      - "MYSQL_ROOT_PASSWORD=${DB_PASSWORD}"
+    ports:
+      - "33061:3306"
+    networks:
+      - kumator-network
+
+  adminer:
+    container_name: php-admin
+    image: adminer:latest
+    restart: always
+    ports:
+      - 8181:8080
+    networks:
+      - kumator-network
+
+volumes:
+  dbdata:
+
+networks:
+  kumator-network:
+    driver: bridge
